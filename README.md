@@ -556,7 +556,7 @@ ggplot() +
 ```
 
 <img
-src=capstone.notebook_files/figure-gfm/unnamed-chunk-18-1.png />
+src=docs/capstone.notebook_files/figure-gfm/unnamed-chunk-18-1.png />
 
 As we delve into the dataset, a prominent insight emerges regarding the
 participants’ daily sleep duration. On average, individuals in our study
@@ -599,7 +599,7 @@ waffle(usertype_chart,rows = 40, size = 0.5,
 ```
 
 <img
-src=capstone.notebook_files/figure-gfm/unnamed-chunk-20-1.png>
+src=docs/capstone.notebook_files/figure-gfm/unnamed-chunk-20-1.png>
 
 From this new dataset, we observed that nearly 70% of users spend most
 of their time in a sedentary state, like sitting or lying down. About
@@ -637,7 +637,7 @@ intensities %>%
 ```
 
 <img
-src=capstone.notebook_files/figure-gfm/unnamed-chunk-21-1.png />
+src=docs/capstone.notebook_files/figure-gfm/unnamed-chunk-21-1.png />
 Based on our visual analysis, we’ve uncovered a trend in the data that
 relates to people’s daily activity levels and sleep patterns. It’s clear
 that, on average, the intensity of physical activities reaches its
@@ -671,7 +671,7 @@ steps %>%
 ```
 
 <img
-src=capstone.notebook_files/figure-gfm/unnamed-chunk-22-1.png />
+src=docs/capstone.notebook_files/figure-gfm/unnamed-chunk-22-1.png />
 Our result corroborates the trends identified in the **“Average
 Intensity Over Time”** analysis. The chart depicting step count unveils
 a clear pattern: users take more steps between 11 a.m. and 7 p.m.,
@@ -708,7 +708,7 @@ heartrate_persecond %>%
 ```
 
 <img
-src=capstone.notebook_files/figure-gfm/unnamed-chunk-23-1.png />
+src=docs/capstone.notebook_files/figure-gfm/unnamed-chunk-23-1.png />
 In this chart, we’ve aggregated the mean of the average heart rate,
 grouped by time in a 24-hour format. The chart offers a reassuring
 glimpse into the health of our users’ heart rates.
@@ -738,7 +738,7 @@ ggplot(data = dailyactivity) +
     ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
 <img
-src=capstone.notebook_files/figure-gfm/unnamed-chunk-24-1.png>
+src=docs/capstone.notebook_files/figure-gfm/unnamed-chunk-24-1.png>
 Our analysis reveals the more steps we take, the more calories we burn.
 It’s a basic and expected connection—being more active leads to greater
 calorie expenditure. This emphasizes the importance of physical activity
