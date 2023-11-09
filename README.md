@@ -73,11 +73,11 @@ about daily activity, steps, and heart rate that can be used to explore
 users’ habits.
 
 ``` r
-dailyactivity <- read.csv("E:/Download/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
-heartrate_persecond <- read.csv("E:/Download/Fitabase Data 4.12.16-5.12.16/heartrate_seconds_merged.csv")
-intensities <- read.csv("E:/Download/Fitabase Data 4.12.16-5.12.16/hourlyIntensities_merged.csv")
-steps <- read.csv("E:/Download/Fitabase Data 4.12.16-5.12.16/hourlySteps_merged.csv")
-sleep <- read.csv("E:/Download/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
+dailyactivity <- read.csv("../GitHub/Bellabeat-Data-Analysis-with-R/docs/dailyActivity_merged.csv")
+heartrate_persecond <- read.csv("../GitHub/Bellabeat-Data-Analysis-with-R/docs/heartrate_seconds_merged.csv")
+intensities <- read.csv("../GitHub/Bellabeat-Data-Analysis-with-R/docs/hourlyIntensities_merged.csv")
+steps <- read.csv("../GitHub/Bellabeat-Data-Analysis-with-R/docs/hourlySteps_merged.csv")
+sleep <- read.csv("../GitHub/Bellabeat-Data-Analysis-with-R/docs/sleepDay_merged.csv")
 ```
 
 ### Preview our datasets
@@ -119,8 +119,6 @@ head(heartrate_persecond)
 
 ```
 Description:df [6 × 3]
- 
- 
 Id
 <dbl>
 Time
@@ -142,8 +140,6 @@ head(intensities)
 
 ```
 Description:df [6 × 4]
- 
- 
 Id
 <dbl>
 ActivityHour
@@ -263,6 +259,7 @@ instances:
 
 ``` r
 head(intensities) 
+
 ```
 Description:df [6 × 5]
 id
