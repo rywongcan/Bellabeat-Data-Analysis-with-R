@@ -88,61 +88,124 @@ After we import the datasets, lets take a brief look to preview them.
 head(dailyactivity)
 ```
 
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["ActivityDate"],"name":[2],"type":["chr"],"align":["left"]},{"label":["TotalSteps"],"name":[3],"type":["int"],"align":["right"]},{"label":["TotalDistance"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["TrackerDistance"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["LoggedActivitiesDistance"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["VeryActiveDistance"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["ModeratelyActiveDistance"],"name":[8],"type":["dbl"],"align":["right"]},{"label":["LightActiveDistance"],"name":[9],"type":["dbl"],"align":["right"]},{"label":["SedentaryActiveDistance"],"name":[10],"type":["dbl"],"align":["right"]},{"label":["VeryActiveMinutes"],"name":[11],"type":["int"],"align":["right"]},{"label":["FairlyActiveMinutes"],"name":[12],"type":["int"],"align":["right"]},{"label":["LightlyActiveMinutes"],"name":[13],"type":["int"],"align":["right"]},{"label":["SedentaryMinutes"],"name":[14],"type":["int"],"align":["right"]},{"label":["Calories"],"name":[15],"type":["int"],"align":["right"]}],"data":[{"1":"1503960366","2":"4/12/2016","3":"13162","4":"8.50","5":"8.50","6":"0","7":"1.88","8":"0.55","9":"6.06","10":"0","11":"25","12":"13","13":"328","14":"728","15":"1985","_rn_":"1"},{"1":"1503960366","2":"4/13/2016","3":"10735","4":"6.97","5":"6.97","6":"0","7":"1.57","8":"0.69","9":"4.71","10":"0","11":"21","12":"19","13":"217","14":"776","15":"1797","_rn_":"2"},{"1":"1503960366","2":"4/14/2016","3":"10460","4":"6.74","5":"6.74","6":"0","7":"2.44","8":"0.40","9":"3.91","10":"0","11":"30","12":"11","13":"181","14":"1218","15":"1776","_rn_":"3"},{"1":"1503960366","2":"4/15/2016","3":"9762","4":"6.28","5":"6.28","6":"0","7":"2.14","8":"1.26","9":"2.83","10":"0","11":"29","12":"34","13":"209","14":"726","15":"1745","_rn_":"4"},{"1":"1503960366","2":"4/16/2016","3":"12669","4":"8.16","5":"8.16","6":"0","7":"2.71","8":"0.41","9":"5.04","10":"0","11":"36","12":"10","13":"221","14":"773","15":"1863","_rn_":"5"},{"1":"1503960366","2":"4/17/2016","3":"9705","4":"6.48","5":"6.48","6":"0","7":"3.19","8":"0.78","9":"2.51","10":"0","11":"38","12":"20","13":"164","14":"539","15":"1728","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+```
+Description:df [6 × 15]
+ 
+ 
+Id
+<dbl>
+ActivityDate
+<chr>
+TotalSteps
+<int>
+TotalDistance
+<dbl>
+TrackerDistance
+<dbl>
+LoggedActivitiesDistance
+<dbl>
+1	1503960366	4/12/2016	13162	8.50	8.50	0	
+2	1503960366	4/13/2016	10735	6.97	6.97	0	
+3	1503960366	4/14/2016	10460	6.74	6.74	0	
+4	1503960366	4/15/2016	9762	6.28	6.28	0	
+5	1503960366	4/16/2016	12669	8.16	8.16	0	
+6	1503960366	4/17/2016	9705	6.48	6.48	0	
+6 rows | 1-7 of 15 columns
+```
 
 ``` r
 head(heartrate_persecond)
 ```
 
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Time"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Value"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"2022484408","2":"4/12/2016 7:21:00 AM","3":"97","_rn_":"1"},{"1":"2022484408","2":"4/12/2016 7:21:05 AM","3":"102","_rn_":"2"},{"1":"2022484408","2":"4/12/2016 7:21:10 AM","3":"105","_rn_":"3"},{"1":"2022484408","2":"4/12/2016 7:21:20 AM","3":"103","_rn_":"4"},{"1":"2022484408","2":"4/12/2016 7:21:25 AM","3":"101","_rn_":"5"},{"1":"2022484408","2":"4/12/2016 7:22:05 AM","3":"95","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+```
+Description:df [6 × 3]
+ 
+ 
+Id
+<dbl>
+Time
+<chr>
+Value
+<int>
+1	2022484408	4/12/2016 7:21:00 AM	97	
+2	2022484408	4/12/2016 7:21:05 AM	102	
+3	2022484408	4/12/2016 7:21:10 AM	105	
+4	2022484408	4/12/2016 7:21:20 AM	103	
+5	2022484408	4/12/2016 7:21:25 AM	101	
+6	2022484408	4/12/2016 7:22:05 AM	95	
+6 rows
+```
 
 ``` r
 head(intensities)
 ```
 
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["ActivityHour"],"name":[2],"type":["chr"],"align":["left"]},{"label":["TotalIntensity"],"name":[3],"type":["int"],"align":["right"]},{"label":["AverageIntensity"],"name":[4],"type":["dbl"],"align":["right"]}],"data":[{"1":"1503960366","2":"4/12/2016 12:00:00 AM","3":"20","4":"0.333333","_rn_":"1"},{"1":"1503960366","2":"4/12/2016 1:00:00 AM","3":"8","4":"0.133333","_rn_":"2"},{"1":"1503960366","2":"4/12/2016 2:00:00 AM","3":"7","4":"0.116667","_rn_":"3"},{"1":"1503960366","2":"4/12/2016 3:00:00 AM","3":"0","4":"0.000000","_rn_":"4"},{"1":"1503960366","2":"4/12/2016 4:00:00 AM","3":"0","4":"0.000000","_rn_":"5"},{"1":"1503960366","2":"4/12/2016 5:00:00 AM","3":"0","4":"0.000000","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+```
+Description:df [6 × 4]
+ 
+ 
+Id
+<dbl>
+ActivityHour
+<chr>
+TotalIntensity
+<int>
+AverageIntensity
+<dbl>
+1	1503960366	4/12/2016 12:00:00 AM	20	0.333333
+2	1503960366	4/12/2016 1:00:00 AM	8	0.133333
+3	1503960366	4/12/2016 2:00:00 AM	7	0.116667
+4	1503960366	4/12/2016 3:00:00 AM	0	0.000000
+5	1503960366	4/12/2016 4:00:00 AM	0	0.000000
+6	1503960366	4/12/2016 5:00:00 AM	0	0.000000
+6 rows
+```
 
 ``` r
 head(sleep)
 ```
-
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["SleepDay"],"name":[2],"type":["chr"],"align":["left"]},{"label":["TotalSleepRecords"],"name":[3],"type":["int"],"align":["right"]},{"label":["TotalMinutesAsleep"],"name":[4],"type":["int"],"align":["right"]},{"label":["TotalTimeInBed"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"1503960366","2":"4/12/2016 12:00:00 AM","3":"1","4":"327","5":"346","_rn_":"1"},{"1":"1503960366","2":"4/13/2016 12:00:00 AM","3":"2","4":"384","5":"407","_rn_":"2"},{"1":"1503960366","2":"4/15/2016 12:00:00 AM","3":"1","4":"412","5":"442","_rn_":"3"},{"1":"1503960366","2":"4/16/2016 12:00:00 AM","3":"2","4":"340","5":"367","_rn_":"4"},{"1":"1503960366","2":"4/17/2016 12:00:00 AM","3":"1","4":"700","5":"712","_rn_":"5"},{"1":"1503960366","2":"4/19/2016 12:00:00 AM","3":"1","4":"304","5":"320","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+```
+Description:df [6 × 5]
+ 
+ 
+Id
+<dbl>
+SleepDay
+<chr>
+TotalSleepRecords
+<int>
+TotalMinutesAsleep
+<int>
+TotalTimeInBed
+<int>
+1	1503960366	4/12/2016 12:00:00 AM	1	327	346
+2	1503960366	4/13/2016 12:00:00 AM	2	384	407
+3	1503960366	4/15/2016 12:00:00 AM	1	412	442
+4	1503960366	4/16/2016 12:00:00 AM	2	340	367
+5	1503960366	4/17/2016 12:00:00 AM	1	700	712
+6	1503960366	4/19/2016 12:00:00 AM	1	304	320
+6 rows
+```
 
 ``` r
 head(steps)
 ```
 
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["ActivityHour"],"name":[2],"type":["chr"],"align":["left"]},{"label":["StepTotal"],"name":[3],"type":["int"],"align":["right"]}],"data":[{"1":"1503960366","2":"4/12/2016 12:00:00 AM","3":"373","_rn_":"1"},{"1":"1503960366","2":"4/12/2016 1:00:00 AM","3":"160","_rn_":"2"},{"1":"1503960366","2":"4/12/2016 2:00:00 AM","3":"151","_rn_":"3"},{"1":"1503960366","2":"4/12/2016 3:00:00 AM","3":"0","_rn_":"4"},{"1":"1503960366","2":"4/12/2016 4:00:00 AM","3":"0","_rn_":"5"},{"1":"1503960366","2":"4/12/2016 5:00:00 AM","3":"0","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
+```
+Id
+<dbl>
+ActivityHour
+<chr>
+StepTotal
+<int>
+1	1503960366	4/12/2016 12:00:00 AM	373	
+2	1503960366	4/12/2016 1:00:00 AM	160	
+3	1503960366	4/12/2016 2:00:00 AM	151	
+4	1503960366	4/12/2016 3:00:00 AM	0	
+5	1503960366	4/12/2016 4:00:00 AM	0	
+6	1503960366	4/12/2016 5:00:00 AM	0	
+6 rows
+```
 
 After using the head function to preview the datasets, I’ve notice some
 issues with these datasets. For instance, before conducting any analysis
@@ -201,14 +264,26 @@ instances:
 ``` r
 head(intensities) 
 ```
+Description:df [6 × 5]
+id
+<dbl>
+activityhour
+<chr>
+activitytime
+<chr>
+totalintensity
+<int>
+averageintensity
+<dbl>
+1	1503960366	04/12/2016	00:00:00	20	0.333333
+2	1503960366	04/12/2016	01:00:00	8	0.133333
+3	1503960366	04/12/2016	02:00:00	7	0.116667
+4	1503960366	04/12/2016	03:00:00	0	0.000000
+5	1503960366	04/12/2016	04:00:00	0	0.000000
+6	1503960366	04/12/2016	05:00:00	0	0.000000
+6 rows
+```
 
-<div data-pagedtable="false">
-
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["id"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["activityhour"],"name":[2],"type":["chr"],"align":["left"]},{"label":["activitytime"],"name":[3],"type":["chr"],"align":["left"]},{"label":["totalintensity"],"name":[4],"type":["int"],"align":["right"]},{"label":["averageintensity"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"1503960366","2":"04/12/2016","3":"00:00:00","4":"20","5":"0.333333","_rn_":"1"},{"1":"1503960366","2":"04/12/2016","3":"01:00:00","4":"8","5":"0.133333","_rn_":"2"},{"1":"1503960366","2":"04/12/2016","3":"02:00:00","4":"7","5":"0.116667","_rn_":"3"},{"1":"1503960366","2":"04/12/2016","3":"03:00:00","4":"0","5":"0.000000","_rn_":"4"},{"1":"1503960366","2":"04/12/2016","3":"04:00:00","4":"0","5":"0.000000","_rn_":"5"},{"1":"1503960366","2":"04/12/2016","3":"05:00:00","4":"0","5":"0.000000","_rn_":"6"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-
-</div>
 
 But before we start to perform any analysis, we also need to verify the
 number of users first.
@@ -480,7 +555,8 @@ ggplot() +
   labs(title = "Mean of the Total Minutes Asleep Over Time", x = "Total Minutes Asleep", y = "Date")
 ```
 
-![](capstone.notebook_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+<img
+src=capstone.notebook_files/figure-gfm/unnamed-chunk-18-1.png />
 
 As we delve into the dataset, a prominent insight emerges regarding the
 participants’ daily sleep duration. On average, individuals in our study
@@ -522,7 +598,8 @@ waffle(usertype_chart,rows = 40, size = 0.5,
        colors = c("#85e085","#e6e600", "#ffd480", "#ff8080"), title="User type distribution")
 ```
 
-![](capstone.notebook_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+<img
+src=capstone.notebook_files/figure-gfm/unnamed-chunk-20-1.png>
 
 From this new dataset, we observed that nearly 70% of users spend most
 of their time in a sedentary state, like sitting or lying down. About
@@ -559,7 +636,8 @@ intensities %>%
   labs(title = "Average Intensity Over Time")
 ```
 
-![](capstone.notebook_files/figure-gfm/unnamed-chunk-21-1.png)<!-- -->
+<img
+src=capstone.notebook_files/figure-gfm/unnamed-chunk-21-1.png />
 Based on our visual analysis, we’ve uncovered a trend in the data that
 relates to people’s daily activity levels and sleep patterns. It’s clear
 that, on average, the intensity of physical activities reaches its
@@ -592,7 +670,8 @@ steps %>%
   labs(title = "Average Steps Over Time")
 ```
 
-![](capstone.notebook_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
+<img
+src=capstone.notebook_files/figure-gfm/unnamed-chunk-22-1.png />
 Our result corroborates the trends identified in the **“Average
 Intensity Over Time”** analysis. The chart depicting step count unveils
 a clear pattern: users take more steps between 11 a.m. and 7 p.m.,
@@ -628,7 +707,8 @@ heartrate_persecond %>%
   labs(title = "Average Heartrate Over Time")
 ```
 
-![](capstone.notebook_files/figure-gfm/unnamed-chunk-23-1.png)<!-- -->
+<img
+src=capstone.notebook_files/figure-gfm/unnamed-chunk-23-1.png />
 In this chart, we’ve aggregated the mean of the average heart rate,
 grouped by time in a 24-hour format. The chart offers a reassuring
 glimpse into the health of our users’ heart rates.
@@ -657,7 +737,8 @@ ggplot(data = dailyactivity) +
 
     ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
-<![](capstone.notebook_files/figure-gfm/unnamed-chunk-24-1.png)>
+<img
+src=capstone.notebook_files/figure-gfm/unnamed-chunk-24-1.png>
 Our analysis reveals the more steps we take, the more calories we burn.
 It’s a basic and expected connection—being more active leads to greater
 calorie expenditure. This emphasizes the importance of physical activity
