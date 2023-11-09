@@ -657,7 +657,7 @@ ggplot(data = dailyactivity) +
 
     ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
-![](capstone.notebook_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+<![](capstone.notebook_files/figure-gfm/unnamed-chunk-24-1.png)>
 Our analysis reveals the more steps we take, the more calories we burn.
 It’s a basic and expected connection—being more active leads to greater
 calorie expenditure. This emphasizes the importance of physical activity
